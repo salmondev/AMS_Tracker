@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ScanQRActivity">
+
+        <Button
+            android:id="@+id/btn_scanByCamera"
+            android:layout_width="146dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:onClick="onScanByCamera"
+            android:text="SCAN BY CAMERA"
+            app:layout_constraintBottom_toTopOf="@+id/btn_scanfromimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtHint" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="275dp"
+            android:layout_height="189dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="No Result Now."
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_MarkOnMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_scanfromimage" />
+
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="Please Choose Scan Types."
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/btn_scanByCamera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <Button
+            android:id="@+id/btn_scanfromimage"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:onClick="onScanFromImage"
+            android:text="SCAN FROM IMAGE"
+            app:layout_constraintBottom_toTopOf="@+id/textResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_scanByCamera" />
+
+        <Button
+            android:id="@+id/btn_MarkOnMap"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onMarkOnMap"
+            android:text="Mark On Map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textResult" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ViewDataActivity">
+
+        <Button
+            android:id="@+id/button_ViewHistoryTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onViewHistoryTable"
+            android:text="History Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_ViewItemTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewItemTable"
+            android:text="Item Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewHistoryTable" />
+
+        <Button
+            android:id="@+id/button_ViewOwnerTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewOwnerTable"
+            android:text="Owner Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewItemTable" />
+
+        <Button
+            android:id="@+id/button_ViewStatusTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewStatusTable"
+            android:text="Status Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewOwnerTable" />
+
+        <Button
+            android:id="@+id/button_ViewMapTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewMapTable"
+            android:text="Map Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewStatusTable" />
+
+        <Button
+            android:id="@+id/button_ViewBuildingTable"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewBuildingTable"
+            android:text="Building Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewMapTable" />
+
+        <Button
+            android:id="@+id/button_ViewFloorTable"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewFloorTable"
+            android:text="Floor Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewBuildingTable" />
+
+        <Button
+            android:id="@+id/button_ViewRoomTable"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewRoomTable"
+            android:text="Room Table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewFloorTable" />
+
+        <Button
+            android:id="@+id/button_EditHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onEditHistory"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewItemTable"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_EditItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditItem"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewItemTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditHistory" />
+
+        <Button
+            android:id="@+id/button_EditOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditOwner"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewOwnerTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditItem" />
+
+        <Button
+            android:id="@+id/button_EditStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditStatus"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewStatusTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditOwner" />
+
+        <Button
+            android:id="@+id/button_EditMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditMap"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewMapTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditStatus" />
+
+        <Button
+            android:id="@+id/button_EditBuilding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditBuilding"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewBuildingTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditMap" />
+
+        <Button
+            android:id="@+id/button_EditFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditFloor"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewFloorTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditBuilding" />
+
+        <Button
+            android:id="@+id/button_EditRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onEditRoom"
+            android:text="Edit"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewRoomTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditFloor" />
+
+        <Button
+            android:id="@+id/button_AddData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onAddData"
+            android:text="_"
+            app:layout_constraintStart_toEndOf="@+id/button_EditHistory"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
