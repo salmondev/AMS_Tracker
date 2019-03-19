@@ -1,1 +1,2 @@
-MyApplicationQR
+#AMS Tracker
+`Asset Management System`
