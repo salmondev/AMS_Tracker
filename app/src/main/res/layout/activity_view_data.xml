@@ -18,32 +18,43 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:onClick="onViewHistoryTable"
+            android:onClick="onViewHistoryAssetTable"
             android:text="History Table"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button_ViewItemTable"
+            android:id="@+id/button_ViewTempHistoryTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onViewTempHistoryAssetTable"
+            android:text="Temp History"
+            app:layout_constraintStart_toEndOf="@+id/button_EditItem"
+            app:layout_constraintTop_toBottomOf="@+id/button_ClearData" />
+
+        <Button
+            android:id="@+id/button_ViewAssetTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:onClick="onViewItemTable"
-            android:text="Item Table"
+            android:onClick="onViewAssetTable"
+            android:text="Asset Table"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_ViewHistoryTable" />
 
         <Button
-            android:id="@+id/button_ViewOwnerTable"
+            android:id="@+id/button_ViewReferTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:onClick="onViewOwnerTable"
-            android:text="Owner Table"
+            android:onClick="onViewReferTable"
+            android:text="Refer Table"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_ViewItemTable" />
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewAssetTable" />
 
         <Button
             android:id="@+id/button_ViewStatusTable"
@@ -54,90 +65,90 @@
             android:onClick="onViewStatusTable"
             android:text="Status Table"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_ViewOwnerTable" />
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewReferTable" />
 
         <Button
-            android:id="@+id/button_ViewMapTable"
+            android:id="@+id/button_ViewDepartmentTable"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:onClick="onViewMapTable"
-            android:text="Map Table"
+            android:layout_marginTop="8dp"
+            android:onClick="onViewDepartmentTable"
+            android:text="Department Table"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_ViewStatusTable" />
 
         <Button
-            android:id="@+id/button_ViewBuildingTable"
+            android:id="@+id/button_ViewAssetVerifyTable"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:onClick="onViewBuildingTable"
-            android:text="Building Table"
+            android:onClick="onViewAssetVerifyTable"
+            android:text="Asset Verify Table"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_ViewMapTable" />
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewDepartmentTable" />
 
         <Button
-            android:id="@+id/button_ViewFloorTable"
+            android:id="@+id/button_ViewUserTable"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:onClick="onViewFloorTable"
-            android:text="Floor Table"
+            android:onClick="onViewUserTable"
+            android:text="User Table"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_ViewBuildingTable" />
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewAssetVerifyTable" />
 
         <Button
-            android:id="@+id/button_ViewRoomTable"
+            android:id="@+id/button_ViewLocationTable"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:onClick="onViewRoomTable"
-            android:text="Room Table"
+            android:layout_marginTop="12dp"
+            android:onClick="onViewLocationTable"
+            android:text="Location Table"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_ViewFloorTable" />
+            app:layout_constraintTop_toBottomOf="@+id/button_ViewUserTable" />
 
         <Button
             android:id="@+id/button_EditHistory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:onClick="onEditHistory"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewItemTable"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewHistoryTable"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button_EditItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:onClick="onEditItem"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewItemTable"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewAssetTable"
             app:layout_constraintTop_toBottomOf="@+id/button_EditHistory" />
 
         <Button
             android:id="@+id/button_EditOwner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:onClick="onEditOwner"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewOwnerTable"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewReferTable"
             app:layout_constraintTop_toBottomOf="@+id/button_EditItem" />
 
         <Button
             android:id="@+id/button_EditStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="16dp"
             android:onClick="onEditStatus"
             android:text="Edit"
@@ -145,57 +156,46 @@
             app:layout_constraintTop_toBottomOf="@+id/button_EditOwner" />
 
         <Button
-            android:id="@+id/button_EditMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="16dp"
-            android:onClick="onEditMap"
-            android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewMapTable"
-            app:layout_constraintTop_toBottomOf="@+id/button_EditStatus" />
-
-        <Button
             android:id="@+id/button_EditBuilding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
             android:onClick="onEditBuilding"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewBuildingTable"
-            app:layout_constraintTop_toBottomOf="@+id/button_EditMap" />
+            app:layout_constraintStart_toEndOf="@+id/button_ViewDepartmentTable"
+            app:layout_constraintTop_toBottomOf="@+id/button_EditStatus" />
 
         <Button
             android:id="@+id/button_EditFloor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             android:onClick="onEditFloor"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewFloorTable"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewAssetVerifyTable"
             app:layout_constraintTop_toBottomOf="@+id/button_EditBuilding" />
 
         <Button
             android:id="@+id/button_EditRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="16dp"
             android:onClick="onEditRoom"
             android:text="Edit"
-            app:layout_constraintStart_toEndOf="@+id/button_ViewRoomTable"
+            app:layout_constraintStart_toEndOf="@+id/button_ViewUserTable"
             app:layout_constraintTop_toBottomOf="@+id/button_EditFloor" />
 
         <Button
-            android:id="@+id/button_AddData"
+            android:id="@+id/button_ClearData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="8dp"
-            android:onClick="onAddData"
-            android:text="_"
+            android:onClick="onClearData"
+            android:text="Clear History"
             app:layout_constraintStart_toEndOf="@+id/button_EditHistory"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>

@@ -2,4 +2,38 @@
     <string name="app_name">EasyQR</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_google_map">Map</string>
+
+    <string name="info_string">Tap any MIFARE / NTAG / ICODE tag!</string>
+    <string name="desc">Launcher image</string>
+
+    <string name="Note">Note: This sample app changes contents on tapped cards</string>
+    <string name="about">About</string>
+    <string name="about_text">This sample demonstrates use of TapLinx SDK.Please visit TapLinx SDK page of www.mifare.net for this application source and more details.</string>
+    <string name="checkbox_text">Allow write operations.</string>
+    <string name="write_ops_title">"Overwrite warning!!"</string>
+    <string name="write_ops_message">Please note by selecting this option application writes sample data to the tapped card if the card key is factory default</string>
+    <string name="title_activity_check_room">CheckRoomActivity</string>
+
+    <string name="ASSET_ID">รหัสครุภัณฑ์ : </string>
+    <string name="ASSET_NAME">ชื่อครุภัณฑ์ : </string>
+    <string name="REFER_NAME">ชื่อผู้เบิก : </string>
+    <string name="REFER_ID">รหัสประจำตัวผู้เบิก : </string>
+    <string name="RECEIVEDATE">วันที่นำเข้าคลัง : </string>
+    <string name="SPEC">รายละเอียดครุภัณฑ์ : </string>
+    <string name="UNITNAME">หน่วยนับ : </string>
+    <string name="LOCATION">สถานที่ : </string>
+    <string name="DATE">วัน : </string>
+    <string name="TIME">เวลา : </string>
+    <string name="STATUS">สถานะ : </string>
+    <string name="SCAN_BY">สแกนโดย : </string>
+    <string name="NOTE">บันทึกเพิ่มเติม : </string>
+
+    <string name="USER_USERNAME">ชื่อผู้ใช้ : </string>
+    <string name="USER_REFER_ID">รหัสบุคลากร : </string>
+    <string name="USER_REFER_NAME">ชื่อบุคลากร : </string>
+
+    <string name="BASE_URL">http://202.44.40.191/ams/</string>
+
+    <string name="OLD_BASE_URL">http://amsapp.net/</string>
+    <string name="OLD_BASE_URL_API">http://api.amsapp.net/</string>
 </resources>

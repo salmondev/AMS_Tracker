@@ -11,7 +11,7 @@ public class CurrentTime {
     public CurrentTime(){
         this.calendar = Calendar.getInstance(TimeZone.getDefault());
         this.day = calendar.get(Calendar.DAY_OF_MONTH);
-        this.month = calendar.get(Calendar.MONTH);
+        this.month = calendar.get(Calendar.MONTH) + 1;
         this.year = calendar.get(Calendar.YEAR);
         this.hour = calendar.get(Calendar.HOUR_OF_DAY);
         this.min = calendar.get(Calendar.MINUTE);

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/easyqr_background7"
+        tools:context=".CheckRoomAsset">
+
+        <Spinner
+            android:id="@+id/spinner_building"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:popupBackground="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/listview_1"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_floor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_floor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            app:layout_constraintBottom_toTopOf="@+id/listview_1"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_room"
+            app:layout_constraintStart_toEndOf="@+id/spinner_building"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toTopOf="@+id/listview_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/spinner_floor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:focusable="false"
+            android:onClick="onScan"
+            android:text="Scan ROOM QR Code"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listview_1" />
+
+        <ListView
+            android:id="@+id/listview_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:divider="@android:drawable/bottom_bar"
+            android:dividerHeight="2dp"
+            android:entries="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/button_scan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_floor" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

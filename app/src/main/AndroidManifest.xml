@@ -11,16 +11,31 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:icon="@drawable/easyqr_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/easyqr_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.myapplicationqr"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -37,12 +52,51 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCFWBMt2vTxKdzJlyn5HayGTfP5vKvdk50" />
 
-        <activity android:name=".ScanQRActivity" />
-        <activity android:name=".GenerateQRActivity" />
-        <activity android:name=".MapActivity" />
-        <activity android:name=".GoogleMapActivity" />
-        <activity android:name=".AddMapActivity" />
-        <activity android:name=".ViewDataActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".ScanQRActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".GenerateQRActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".MapActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".GoogleMapActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".AddMapActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".ViewDataActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".SyncActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".WriteNFCActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".SetupTagActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".CheckRoomAsset"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".StoreDataActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".SearchAssetActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity
+            android:name=".MyAssetActivity"
+            android:configChanges="orientation|screenSize|keyboard" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".WebActivity" />
+        <activity android:name=".ManualSubmit"></activity>
     </application>
 
 </manifest>

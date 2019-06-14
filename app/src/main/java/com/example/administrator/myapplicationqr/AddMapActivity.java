@@ -98,7 +98,7 @@ public class AddMapActivity extends AppCompatActivity {
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
             byte[] bytesArray = bos.toByteArray();
 
-            MainActivity.mydb.onInsert_MAP_TABLE(bytesArray,editText.getText().toString());
+            //MainActivity.mydb.onInsert_MAP_TABLE(bytesArray,editText.getText().toString());
 
             Intent itn = new Intent(this,MainActivity.class);
             startActivity(itn);
